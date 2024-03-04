@@ -1,0 +1,37 @@
+PYTHON DAY 6:
+
+Inheritance: a tool that allows us to recycle code by creating a class that "inherits" the attributes and methods of a parent class.
+
+Composition: a tool that enables you to recycle code by adding objects to other objects. Rather than building on a base class as in inheritance, composition leverages the attributes and methods of an instance of another class.
+
+Subclass: a class that inherits from another class. Colloquially called a "child" class.
+
+Superclass: a class that is inherited by another class. Colloquially called a "parent" class.
+
+Child: another name for a subclass.
+
+Parent: another name for a superclass.
+
+super(): a built-in Python function that allows us to manipulate the attributes and methods of a superclass from the body of its subclass.
+
+Decorator: syntax that allows us to add functionality to an object without modifying its structure.
+
+NOTE TO KNOW:
+Functions are like individual tasks or actions that you can define and reuse, while classes are blueprints for creating objects that encapsulate both data and behavior related to a specific concept or entity in your program
+
+====================INHERITANCE========================
+The use of inheritance allows us to create a family of classes with shared behavior, while still differentiating those classes
+
+In Python, __init__ is a special method, also known as a constructor, used in classes. It is automatically called when a new instance of the class is created. The __init__ method is typically used to initialize the object's attributes or perform any setup that is necessary before the object is ready for use.
+
+Self Parameter: The first parameter of __init__ is always self, which refers to the instance of the class itself. It is used to access and modify the object's attributes within the method.
+
+__bases__ attribute is used to ask a child/sub class what class it inherits from.
+
+NOTE:
+The  __bases__ attribute is a tuple. This is because it shows all superclasses of the Car class.
+
+All Python classes share the same metaclass: the type class!
+    Example: 
+        int.__class__
+        # <class 'type'>
